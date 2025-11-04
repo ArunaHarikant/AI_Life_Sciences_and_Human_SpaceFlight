@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Links</title>
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /* --- 1. General Styling & Animated Background --- */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            /* This creates the moving gradient background */
+            background: linear-gradient(-45deg, #1a001a, #4d004d, #001f3f, #003366);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* The animation that moves the background gradient */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* --- 2. The Main Content Card (Glassmorphism) --- */
+        .container {
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            padding: 40px 30px;
+            /* The "frosted glass" effect */
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px); /* For Safari */
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        /* --- 3. Profile Section --- */
+        .profile-picture {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* Makes it a circle */
+            border: 3px solid #ff00ff; /* Neon pink border */
+            object-fit: cover; /* Prevents image from stretching */
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            margin: 5px 0 25px 0;
+            font-size: 1em;
+            font-weight: 300;
+            color: #d1d1d1;
+        }
+
+        /* --- 4. Social Media Icons --- */
+        .social-links {
+            margin-bottom: 30px;
+        }
+
+        .social-links a {
+            color: #ffffff;
+            font-size: 24px;
+            margin: 0 12px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ff00ff; /* Neon pink on hover */
+            transform: scale(1.2);
+        }
+
+        /* --- 5. Main Link Buttons --- */
+        .link-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Space between buttons */
+        }
+
+        .link-btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 400;
+            font-size: 1em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .link-btn:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+            transform: scale(1.03); /* Slightly enlarge on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- ================================== -->
+        <!-- ===== CUSTOMIZE YOUR INFO HERE ===== -->
+        <!-- ================================== -->
+
+        <!-- 1. Profile Picture: Replace the src="..." with a direct link to your photo -->
+        <img src="https://i.ibb.co/7jG0Z9M/astronaut-profile.png" alt="Profile Picture" class="profile-picture">
+
+        <!-- 2. Name and Subtitle -->
+        <h1>YOUR NAME HERE</h1>
+        <p class="subtitle">Web Developer & Tech Enthusiast</p>
+
+        <!-- 3. Social Media Links: Replace "#" with your profile URLs -->
+        <div class="social-links">
+            <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank" title="Twitter/X"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <!-- 4. Main Links: Replace "#" with your links and change the text -->
+        <div class="link-buttons">
+            <a href="#" class="link-btn" target="_blank">My Portfolio Website</a>
+            <a href="#" class="link-btn" target="_blank">View My Latest Project</a>
+            <a href="#" class="link-btn" target="_blank">Connect on LinkedIn</a>
+            <a href="mailto:youremail@example.com" class="link-btn">Contact Me</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
